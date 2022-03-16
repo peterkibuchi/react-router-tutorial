@@ -5,10 +5,9 @@ import { selectArticles } from '../features/articles/articlesSlice';
 import { Link, useParams } from 'react-router-dom';
 
 export default function Category () {
-  const categories = useSelector(selectCategories)
-  const articles = useSelector(selectArticles)
-
-  const { name } = useParams()
+  const categories = useSelector(selectCategories);
+  const articles = useSelector(selectArticles);
+  const { name } = useParams();
 
   return (
     <div>
@@ -22,10 +21,10 @@ export default function Category () {
                   {articles[articleSlug].title}
                 </Link>
               </li>
-            )
+            );
           })
         }
       </ul>
     </div>
-  )
+  );
 }

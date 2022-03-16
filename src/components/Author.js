@@ -9,7 +9,7 @@ export default function Author () {
 
   // Extract the `name` URL parameter.
   const { name } = useParams();
-  const authors = useSelector(selectAuthors)
+  const authors = useSelector(selectAuthors);
   const author = authors[name];
 
   return (
@@ -24,7 +24,7 @@ export default function Author () {
                   {slug}
                 </Link>
               </li>
-            )
+            );
           }) : <p> No Articles Found... </p>
         }
       </ul>
