@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { signUp } from "../features/session/sessionSlice"
 import { useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
+import { signUp } from "../features/session/sessionSlice";
 // import useHistory
 
 export default function SignUp () {
@@ -8,12 +9,13 @@ export default function SignUp () {
   const dispatch = useDispatch();
   
   // Grab the history object
+  const history = useHistory();
 
   const handleSubmit = e => {
     e.preventDefault();
     dispatch(signUp({username: username}));
     // imperatively redirect the user to /profile
-
+    history.push("/profile");
   }
 
   return (
@@ -21,7 +23,7 @@ export default function SignUp () {
       <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
         <label>
-          Username
+          Username:
           <div>
             <input
               id="username"

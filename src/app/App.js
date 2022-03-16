@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import About from "../components/About";
@@ -14,13 +14,40 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
       <main>
         {/* Add Routes here! */}
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+
+          <Route exact path="/articles">
+            <Articles />
+          </Route>
+          <Route path="/articles/:title">
+            <Article />
+          </Route>
+
+          <Route path="/categories">
+            <Categories />
+          </Route>
+
+          <Route path="/authors/:name">
+            <Author />
+          </Route>
+
+          <Route path="/sign-up">
+            <SignUp />
+          </Route>
+          <Route path="/profile">
+            <Profile />
+          </Route>
+        </Switch>
       </main>
       <Footer />
-    </div>
+    </Router>
   );
 }
 
