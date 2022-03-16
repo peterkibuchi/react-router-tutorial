@@ -5,8 +5,8 @@ import { Route, Link, useRouteMatch } from 'react-router-dom';
 import Category from './Category'
 
 export default function Categories () {
-  const categories = useSelector(selectCategories)
-  const { path, url } = useRouteMatch()
+  const categories = useSelector(selectCategories);
+  const { path, url } = useRouteMatch();
 
   return (
     <main>
@@ -22,7 +22,7 @@ export default function Categories () {
           })
         }
       </ul>
-      <Route path={`/${path}/:name`}>
+      <Route path={`${path}/:name`}>
         <Category />
       </Route>
     </main>
