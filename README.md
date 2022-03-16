@@ -1,19 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Project Name
+> A simple single-page application for reading technical articles.
+> Live demo [_here_](https://peterkibuchi.github.io/react-router-tutorial/).
 
-## Available Scripts
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Project Status](#project-status)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+<!-- * [License](#license) -->
 
-In the project directory, you can run:
 
-### `npm start`
+## General Information
+- I undertook this project as a hands-on means of learning React Router.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Technologies Used
+- React
+- Redux
+- React Router
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Status
+Project is: _complete_.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Acknowledgements
+- This is a challenge project on the Codecademy [Full-Stack Engineer Career Path](https://www.codecademy.com/learn/paths/full-stack-engineer-career-path).
+
+
+## Contact
+Created by [Peter Kibuchi](https://www.peterkibuchi.com/).
+
+
+<!-- ## License -->
+<!-- This project is open source and available under the [... License](). -->
