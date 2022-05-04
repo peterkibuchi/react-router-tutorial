@@ -1,4 +1,4 @@
-# Project Name
+# React Router Tutorial
 > A simple single-page application for reading technical articles.
 > Live demo [_here_](https://peterkibuchi.github.io/react-router-tutorial/).
 
